@@ -44,19 +44,19 @@ from glocaltokens.client import GLocalAuthenticationTokens
 #
 # If you call this too often, google will disconnect your android devices and other weird things will happen
 #
-# Call get_google_devices_json() afterwards to get timers/alarms as oftens as you want to update.
+Call get_google_devices_json() afterwards to get timers/alarms as oftens as you want to update.
 client = GLocalAuthenticationTokens(
-  username="<YOUR_GOOGLE_USERNAME>",
-  password="<YOUR_GOOGLE_PASSWORD>"
+  username="chriswilkinson711@gmail.com",
+  password="Seven1113. "
 )
 
-# Get master token
+Get master token
 print("[*] Master token", client.get_master_token())
 
 # Get access token (lives 1 hour)
 print("\n[*] Access token (lives 1 hour)", client.get_access_token())
 
-# Get google device local authentication tokens (live about 1 day)
+Get google device local authentication tokens (live about 1 day)
 print("\n[*] Google devices local authentication tokens")
 google_devices = client.get_google_devices_json()
 
@@ -67,7 +67,7 @@ from glocaltokens.const import GOOGLE_HOME_MODELS
 
 google_devices_select = client.get_google_devices_json(GOOGLE_HOME_MODELS)
 
-# But if you need to select just a set of models, or add new models, you can use a list of str
+But if you need to select just a set of models, or add new models, you can use a list of str
 google_devices_select_2 = client.get_google_devices_json([
     f"Google Home",
     f"Google Home Mini",
@@ -101,7 +101,7 @@ client = GLocalAuthenticationTokens(
   password="<YOUR_GOOGLE_PASSWORD>"
 )
 
-# Get master token
+Get master token
 master_token = client.get_master_token()
 print("[*] Master token", master_token)
 
